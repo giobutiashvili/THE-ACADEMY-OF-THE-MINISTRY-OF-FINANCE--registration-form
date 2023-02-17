@@ -1,0 +1,80 @@
+/* global css */
+body{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* colors */
+.text-input-label{
+    color:var(--labletext);
+}
+.text-input{
+    color:var(--inputtext);
+}
+.p-teg{
+    color: var(--darcktext);
+}
+
+/*  sections */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.header-div{
+    display: flex;
+}
+.header-div a{
+    margin-right: 20px;
+}
+.header-div img{
+    width: 65px;
+    height: 65px;
+    margin: 20px;
+}
+.p-teg p{
+    margin-bottom: 80px;
+}
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 200px;
+    justify-content: center;
+    
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.text-input-label ,.text-input ,.locations ,.gender{
+    border: 0;
+    margin-right: 30px;
+    width: 349px;
+    height: 50px;
+    opacity: 1
+}
+.text-input-label{
+    text-align: left;
+    height: 38px;
+
+}
+.text-input{
+    padding: 15px 0 16px 20px;
+}
+.gender{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.gender>div {
+    flex-direction: row;
+}
+
