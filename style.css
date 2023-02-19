@@ -6,7 +6,7 @@
     src: url(./fonts/MarkGEOCAPSLight.woff);
 }
 /* global css */
-body{
+body, p{
     margin: 0;
     padding: 0;
 }
@@ -41,6 +41,7 @@ a{
 .header-div2 a:last-child{
     color: var(--labletext);
     margin-right: 30px;
+    margin-left: 20px;
 }
 
 
@@ -60,15 +61,19 @@ header{
     display: flex;
     margin-top: 19.68px;
     align-items: center;
+    margin-bottom: 20px;
 }
 .header-div1 a{
     margin-right: 20px;
     font: normal normal 600 15px/20px Mark GEO CAPS;
 }
-.header-div1 img{
+.img{
     width: 65px;
     height: 65px;
     margin: 20px;
+}
+.header-div1 div p{
+    margin:0;
 }
 .header-div2{
     justify-content: space-between;
@@ -164,5 +169,6 @@ header{
     border-radius: 3px;
     font: normal normal bold 14px/19px Mark GEO CAPS;
     padding: 12px 21px 12px 20px;
+    color: var(--white);
 }
 
