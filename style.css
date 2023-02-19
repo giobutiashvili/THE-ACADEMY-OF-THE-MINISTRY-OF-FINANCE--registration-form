@@ -1,7 +1,14 @@
+@font-face {
+    font-family:Mark GEO CAPS;
+    src: url(./fonts/MarkGEO-Regular.woff);
+    src: url(./fonts/MarkGEOCAPS-Medium.woff);
+    src: url(./fonts/MarkGEOCAPSBold.woff);
+    src: url(./fonts/MarkGEOCAPSLight.woff);
+}
 /* global css */
 body{
-    max-width: 1170px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 *{
     box-sizing: border-box;
@@ -14,67 +21,148 @@ a{
 /* colors */
 .text-input-label{
     color:var(--labletext);
+    font: normal normal bold 14px/19px Mark GEO;
+    letter-spacing: 0px;
 }
 .text-input{
     color:var(--inputtext);
+    font: normal normal normal 14px/19px Mark GEO;
+    letter-spacing: 0px;
 }
 .p-teg{
     color: var(--darcktext);
+    font: normal normal bold 24px/32px Mark GEO CAPS;
+    border-bottom: 1px solid #E3E3E3;;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
 }
+.header-div2 a:last-child{
+    color: var(--labletext);
+    margin-right: 30px;
+}
+
 
 /*  sections */
 header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 15px 15px #00000014;
 }
 .header-div{
+    width: 1170px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    height: 100px;
 }
-.header-div a{
+.header-div1 ,.header-div2 {
+    display: flex;
+    margin-top: 19.68px;
+    align-items: center;
+}
+.header-div1 a{
     margin-right: 20px;
+    font: normal normal 600 15px/20px Mark GEO CAPS;
 }
-.header-div img{
+.header-div1 img{
     width: 65px;
     height: 65px;
     margin: 20px;
 }
-.p-teg p{
-    margin-bottom: 80px;
+.header-div2{
+    justify-content: space-between;
+    align-items: center;
+    width: 319px;
+}
+.background{
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    padding-top: 72px;
+    background: linear-gradient(to right, var(--white) 80% , var(--labletext) 20%);
+}
+.section{
+    max-width: 1170px;
+    margin: 0 auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 15px 15px 15px #0000001A;
+    border-radius: 5px;
+
 }
 .main-section{
     display: flex;
-    flex-wrap: wrap;
-    margin-inline: 200px;
     justify-content: center;
-    
+}
+.div1{
+    margin-right: 30px;
 }
 .form-group{
     display: flex;
     flex-direction: column;
 }
-.text-input-label ,.text-input ,.locations ,.gender{
-    border: 0;
-    margin-right: 30px;
+.text-input-label ,.text-input ,.locations {
     width: 349px;
     height: 50px;
-    opacity: 1
 }
 .text-input-label{
     text-align: left;
-    height: 38px;
-
+    margin-top: 19px;
 }
 .text-input{
     padding: 15px 0 16px 20px;
+    background: #F6F6F7 0% 0% no-repeat padding-box;
+    border: 1px solid #EBE9E9;
+    border-radius: 3px;
 }
 .gender{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
 }
 .gender>div {
     flex-direction: row;
+    padding: 15px 0 16px 20px;
+}
+.sex-container{
+    margin-right: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.footer p {
+    color: var(--red);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    font: normal normal bold 15px/20px MarkGEOCAPSBold;
+    margin-right: 18px;
+}
+.footer div{
+    display: flex;
+    width: 349px;
+}
+.footer div:first-child{
+    margin-right: 30px;
+}
+.footer div:last-child{
+    justify-content: flex-end;
+}
+.footer div span{
+    font: normal normal bold 12px/16px Mark GEO;
+    width: 321px;
+    height: 111px;
+    color: var(--red);
+}
+.footer div .btn{
+    width: 107px;
+    height: 43px;
+    background: var(--labletext) 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    font: normal normal bold 14px/19px Mark GEO CAPS;
+    padding: 12px 21px 12px 20px;
 }
 
