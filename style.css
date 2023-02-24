@@ -16,7 +16,10 @@ body, p{
 a{
     text-decoration: none;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 /* colors */
 .text-input-label{
@@ -33,10 +36,9 @@ a{
     color: var(--darcktext);
     font: normal normal bold 24px/32px Mark GEO CAPS;
     border-bottom: 1px solid #E3E3E3;;
-    height: 76px;
+    padding: 22px 0 22px 30px;
     display: flex;
     align-items: center;
-    padding-left: 30px;
 }
 .header-div2 a:last-child{
     color: var(--labletext);
@@ -44,7 +46,9 @@ a{
     margin-left: 20px;
 }
 
-
+input {
+    outline-color: var(--labletext);
+}
 /*  sections */
 header{
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -55,13 +59,11 @@ header{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    height: 100px;
 }
 .header-div1 ,.header-div2 {
     display: flex;
-    margin-top: 19.68px;
     align-items: center;
-    margin-bottom: 20px;
+
 }
 .header-div1 a{
     margin-right: 20px;
@@ -78,12 +80,12 @@ header{
 .header-div2{
     justify-content: space-between;
     align-items: center;
-    width: 319px;
 }
 .background{
-    background: #F2F2F2 0% 0% no-repeat padding-box;
+
     padding-top: 72px;
     background: linear-gradient(to right, var(--white) 80% , var(--labletext) 20%);
+    padding-bottom: 96px;
 }
 .section{
     max-width: 1170px;
@@ -91,6 +93,7 @@ header{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 15px 15px 15px #0000001A;
     border-radius: 5px;
+    padding-bottom: 91px;
 
 }
 .main-section{
@@ -117,6 +120,9 @@ header{
     background: #F6F6F7 0% 0% no-repeat padding-box;
     border: 1px solid #EBE9E9;
     border-radius: 3px;
+}
+.locations{
+    padding: 15px 0 16px 20px;
 }
 .gender{
     display: flex;
@@ -159,7 +165,7 @@ header{
 .footer div span{
     font: normal normal bold 12px/16px Mark GEO;
     width: 321px;
-    height: 111px;
+   
     color: var(--red);
 }
 .footer div .btn{
