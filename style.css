@@ -43,7 +43,7 @@ input::-webkit-inner-spin-button {
 .header-div2 a:last-child{
     color: var(--labletext);
     margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 21px;
 }
 
 input {
